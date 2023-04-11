@@ -101,7 +101,7 @@ h1 {
 }
 
 .desktop-map {
-  max-width: 1400px;
+  max-width: 1028px;
   width: 100%;
   height: auto;
   display: block;
@@ -136,7 +136,7 @@ p {
   font-size: var(--space-10);
   line-height: 120%;
   color: var(--dark-grey);
-  padding-bottom: var(--space-4);
+  padding-bottom: var(--space-10);
 }
 
 .highlight {
