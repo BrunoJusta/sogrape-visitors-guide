@@ -31,10 +31,10 @@
   --box-shadow: 0px 0px 12px rgba(45, 45, 45, 0.15);
 
   /* Typography */
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  --font-weight-light: light;
+  --font-weight-normal: normal;
+  --font-weight-semibold: bold;
+  --font-weight-bold: bolder;
 }
 
 html {
@@ -129,6 +129,7 @@ p {
   font-size: var(--space-6);
   color: var(--rust);
   font-weight: var(--font-weight-normal);
+  padding-bottom: var(--space-4);
 }
 
 .section-subtitle {

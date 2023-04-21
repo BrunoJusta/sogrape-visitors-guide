@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@font-face {
+  font-family: "NovelPro";
+  src: url("./fonts/NovelSansPro_Light.otf") format("opentype"),
+    url("./fonts/NovelSansPro_Regular.otf") format("opentype"),
+    url("./fonts/NovelSansPro_SemiBold.otf") format("opentype"),
+    url("./fonts/NovelSansPro_Bold.otf") format("opentype");
+  font-weight: light, normal, bold, bolder;
+  font-style: light, normal, bold, bolder;
+}
+
 /* Reset CSS */
 
 /* Box-sizing reset */
@@ -95,7 +105,7 @@ a {
 
 /* Set default font family and size */
 body {
-  font-family: Outfit;
+  font-family: NovelPro;
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
