@@ -163,7 +163,16 @@ p {
 .contact-card h4 {
   color: var(--dark-grey);
   font-weight: var(--font-weight-semibold);
+  font-size: var(--space-4);
+  padding-bottom: var(--space-2);
 }
+
+.contact-light {
+  color: var(--blue-grey);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--space-4);
+}
+
 .contact-card i {
   color: var(--blue-grey);
   margin-right: var(--space-1);
