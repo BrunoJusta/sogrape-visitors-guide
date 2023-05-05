@@ -64,6 +64,46 @@ body {
   padding: var(--space-6) 10vw;
 }
 
+.language {
+  display: flex;
+  gap: 8px;
+  align-self: flex-end;
+}
+
+.language-btn {
+  border: 1px solid var(--blue-grey);
+  color: var(--blue-grey);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding-top: 4px;
+  font-size: 14px;
+}
+.language-btn:hover {
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  background-color: rgba(176, 84, 51, 0.1);
+}
+.language-btn.active {
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  background-color: rgba(176, 84, 51, 0.1);
+  font-weight: var(--font-weight-bold);
+}
+.language-btn.disabled {
+  cursor: none;
+  opacity: 20%;
+}
+
+.sograpeLogo {
+  width: auto;
+  margin-bottom: 64px;
+  height: 80px;
+}
+
 .intro p {
   max-width: 500px;
   text-align: center;
@@ -97,7 +137,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space-17) 10vw;
+  padding: var(--space-15) 10vw;
 }
 
 .desktop-map {
@@ -228,10 +268,29 @@ p {
 .footer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  background-color: var(--off-white);
+  padding: var(--space-2) 10vw;
+  border-top: 1px solid var(--blue-grey);
+}
+
+.footer-logo {
+  height: 48px;
+}
+.footer-img {
+  height: 48px;
+}
+.footer-responsible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: var(--off-white);
   padding: var(--space-4) 10vw;
   border-top: 1px solid var(--blue-grey);
+  color: var(--blue-grey);
+  font-size: var(--space-5);
 }
 
 .copyrights {
@@ -285,6 +344,17 @@ b {
   .footer {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+  }
+
+  .header {
+    padding-bottom: 0px;
+  }
+  .language {
+    align-self: center;
+  }
+
+  .sograpeLogo {
+    margin-bottom: 32px;
   }
 
   .intro h2 {
@@ -341,9 +411,13 @@ b {
   }
 
   .footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 16px;
+  }
+
+  .footer-responsible {
+    font-size: var(--space-4);
   }
 }
