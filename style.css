@@ -303,6 +303,7 @@ p {
   flex-direction: row;
   gap: var(--space-2);
   align-items: flex-start;
+  flex: 1;
 }
 .desc {
   display: flex;
@@ -328,6 +329,8 @@ b {
   object-fit: cover;
   border: none;
   border-radius: 20px;
+  flex: 1;
+  min-width: 200px;
 }
 
 @media (max-width: 900px) {
