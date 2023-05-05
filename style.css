@@ -64,6 +64,10 @@ body {
   padding: var(--space-6) 10vw;
 }
 
+.header{
+  padding-bottom: 0px !important;
+}
+
 .language {
   display: flex;
   gap: 8px;
