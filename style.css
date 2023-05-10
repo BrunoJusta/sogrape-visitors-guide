@@ -185,7 +185,7 @@ p {
 }
 
 .highlight {
-  font-size: var(--space-4);
+  font-size: 1.125rem;
   color: var(--rust);
   font-weight: var(--font-weight-normal);
 }
